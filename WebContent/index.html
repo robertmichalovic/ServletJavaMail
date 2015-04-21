@@ -1,0 +1,53 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+<title>Formulare pro odeslani mailu</title>
+<meta http-equiv="Content-Type" content="text/html">
+<meta name="description" content="projekèní firma Michaloviè Projects">
+<meta name="keywords" content="LAN,bezpeènost PC a sítí,passport">
+<meta name="copyright" content="Michaloviè Robert">
+<meta name="robots" content="ALL,NOINDEX,NOFOLLOW">
+<link rel="stylesheet" href="css/styles.css" type="text/css"></head>
+<body bgcolor="#99DEA2">
+<h4>Formuláø pro odeslani mailu : </h4>
+
+
+<form action="OdeslaniMailu" method="GET">
+<table border="1" cellspacing="1" cellpadding="1" align="center">
+<tr><td>Odesílatel:  </td><td><input type="text" size="30" name="odesilatel" VALUE="there@seznam.cz"></td></tr>
+<tr><td>Pøíjemce:  </td><td><input type="text" size="30" name="prijemce" VALUE="there@seznam.cz"></td></tr>
+<tr><td colspan=2><textarea name="zprava" cols="70" rows="7" ></textarea></td></tr>
+</table>
+<p align=center><input type="submit" name="pridej" value=" Odeslat "><input type=reset value=" Vymazat ">
+</form>
+
+
+<h4>Formuláø pro odeslani HTML mailu : </h4>
+
+
+<form action="OdeslaniHTMLMailu" method="POST">
+<table border="1" cellspacing="1" cellpadding="1" align="center">
+<tr><td>Odesílatel:  </td><td><input type="text" size="30" name="odesilatel" VALUE="there@seznam.cz"></td></tr>
+<tr><td>Pøíjemce:  </td><td><input type="text" size="30" name="prijemce" VALUE="there@seznam.cz"></td></tr>
+<tr><td>Pøedmìt mailu:  </td><td><input type="text" size="30" name="predmet" VALUE="Dotaz ..."></td></tr>
+<tr><td colspan=2><textarea name="zprava" cols="70" rows="7" ></textarea></td></tr>
+</table>
+<p align=center><input type="submit" name="pridej" value=" Odeslat "><input type=reset value=" Vymazat ">
+</form>
+
+
+<h4>Formuláø pro odeslani mailu s pøílohou: </h4>
+
+
+<form action="OdeslaniPrilohaMailu" method="POST">
+<table border="1" cellspacing="1" cellpadding="1" align="center">
+<tr><td>Odesílatel:  </td><td><input type="text" size="30" name="odesilatel" VALUE="there@seznam.cz"></td></tr>
+<tr><td>Pøíjemce:  </td><td><input type="text" size="30" name="prijemce" VALUE="there@seznam.cz"></td></tr>
+<tr><td>Pøedmìt mailu:  </td><td><input type="text" size="30" name="predmet" VALUE="Dotaz ..."></td></tr>
+<tr><td>Cesta k souboru:  </td><td><input type="file" size="30" name="cestaSoubor"></td></tr>
+<tr><td colspan=2><textarea name="zprava" cols="70" rows="7" ></textarea></td></tr>
+</table>
+<p align=center><input type="submit" name="pridej" value=" Odeslat "><input type=reset value=" Vymazat ">
+</form>
+</body>
+</html>
