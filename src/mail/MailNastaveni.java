@@ -33,7 +33,7 @@ public class MailNastaveni {
 		props.put("mail.smtp.auth", "true");
 		mailConnection = Session.getDefaultInstance(props,new javax.mail.Authenticator(){
 			protected PasswordAuthentication getPasswordAuthentication() {
-				return new PasswordAuthentication("there", "aa");	}	});	}
+				return new PasswordAuthentication("franta", "aa123");	}	});	}
 	private void nastaveniParamODKomu(){
 		try {
 			odAdress = new InternetAddress(odesilatel, "there");				//	od koho
