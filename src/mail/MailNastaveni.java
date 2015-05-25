@@ -27,8 +27,8 @@ public class MailNastaveni {
 	private void nastaveniServerMail(){
 		props = new Properties( );
 		props.put("mail.smtp.host", "smtp.seznam.cz");			//	konstanta(klic) a hodnota
-		props.put("mail.smtp.user", "there");
-		props.put("mail.smtp.password", "aa");
+		props.put("mail.smtp.user", "franta");
+		props.put("mail.smtp.password", "aa123");
 		props.put("mail.smtp.port", "25"); 
 		props.put("mail.smtp.auth", "true");
 		mailConnection = Session.getDefaultInstance(props,new javax.mail.Authenticator(){
